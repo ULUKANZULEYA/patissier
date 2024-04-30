@@ -34,3 +34,21 @@ height: 100vh;
 object-fit: cover;
 object-position: 0 70%;
 }
+
+
+.imagg{
+    width: 700px;
+    height: 600px;
+    object-fit: cover;
+}
+
+.carte{
+    border-radius: 30px;
+    box-shadow: 1px 1px 5px black;
+    width: 900px;
+    display: flex;
+    margin: 100px;
+
+    
+
+}
