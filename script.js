@@ -81,10 +81,20 @@ function afficheAvis(tableauDesAvis){
 </p>
 
   `});
+
+
+
+
 }
 
+var map = L.map('map').setView([47.4755, 3.3402], 7);
+var marker = L.marker([47.4755, 3.3402]).addTo(map);
 
-  
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);
+
 
 
 
