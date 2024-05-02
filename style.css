@@ -1,10 +1,12 @@
 * {
   box-sizing: border-box;
 }
-
+body{
+    margin: 0;
+}
 .logo {
-  width: 165px;
-  height: 165px;
+  width: 5%;
+  height: 5%;
   display: flex;
   object-fit: cover;
 }
@@ -21,7 +23,6 @@
   align-items: center;
   display: flex;
   top: 0;
-  width: 100%;
   background: linear-gradient(
     180deg,
     rgba(0, 0, 0, 1) 0%,
@@ -43,6 +44,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: -50%;
+  width: 100%;
+
 }
 .heroContent {
   width: 70%;
@@ -183,7 +186,7 @@
 }
 #map {
   height: 400px;
-  width: 400px;
+  width: 30%;
 }
 .popup span {
   font-size: 18px;
@@ -203,7 +206,7 @@ justify-content: center;
 padding: 80px 100px;
 }
 .total{
-width: 100%;
+width: 40%;
 padding: 80px 10px;
 margin: 30px;
 color: #551a8b;
@@ -242,6 +245,14 @@ font-size: larger;
 
 }
 
-.logo{
-    font-size: 40px;
+.logoSocial{
+    font-size: 1.5rem;
+    width: 20%;
+}
+
+
+.sectionPatisserie {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }

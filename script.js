@@ -1,3 +1,5 @@
+
+
 // Envoie une requête GET à l'URL de l'api pour récupérer des données
 fetch("patisseries.json")
   // Une fois que la réponse est reçue
@@ -46,11 +48,11 @@ function addProducts(tableauDesProduits) {
   //console.log(data);
   tableauDesProduits.forEach(gateau => {
     document.querySelector("#content").innerHTML +=`
-  <div class="carte">
+  <div class="carte" div data-aos="zoom-in">
     <img src="${gateau.images}" alt="" class="imagg" >
     <div>
         <h3>${gateau.nom}</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur rerum iusto ex dicta quaerat! Soluta quas quis consectetur sequi nesciunt iste est aut cum. </p>
+        <p>${gateau.description}</p>
     </div>
   </div>`
   });
@@ -60,11 +62,15 @@ function afficherService(tableauDesServices){
 
 document.querySelector("#pre").innerHTML +=`
 
+
+<div data-aos="zoom-out-right">
+
+
 <p class="serviiiice">
 <span>${srvc.nom}</span>
 ${srvc.description}
 </p>
-
+</div>
 
 `});
 }
@@ -73,13 +79,19 @@ function afficheAvis(tableauDesAvis){
 
   document.querySelector("#AVIS").innerHTML+=`
 
-  <p class="temoignageee">
+
+
+  <div data-aos="zoom-out-left">
+
+
+  <p class="temoignageee"
+
   <span>${avs.prenom}</span>
   <span>${avs.typeExperience}</span>
   "${avs.commentaire}"
   <span>${avs.note}</span>
 </p>
-
+</div>
   `});
 
 
@@ -95,7 +107,4 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
-
-
-
-
+AOS.init();
