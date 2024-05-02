@@ -17,9 +17,9 @@ fetch("patisseries.json")
 
 function afficheLeHero(donnee){
 document.querySelector("#hero").innerHTML+=`
-<div class="div2">
-    <h2>${donnee.entreprise.nomCommercial}</h2>
-    <h3>${donnee.entreprise.phraseAccroche}</h3>
+<div class="heroContent">
+    <h2 class="texte" >${donnee.entreprise.nomCommercial}</h2>
+    <h2 class="texte" >${donnee.entreprise.phraseAccroche}</h2>
     <h3>${donnee.entreprise.texteAppelAction}</h3>
 </div>
 `
