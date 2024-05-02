@@ -53,9 +53,10 @@
 
 
 .imagg{
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     object-fit: cover;
+    border-radius: 30px;
 }
 
 .carte{
@@ -83,3 +84,103 @@
 
  
 }
+.lesavis{
+    border-radius: 30px;
+    box-shadow: 1px 1px 5px black;
+    width: 700px;
+    height: 100px;
+    display: flex;
+    margin: 200px;
+    justify-content: center;  
+}
+.lesservices{
+    border-radius: 30px;
+    box-shadow: 1px 1px 5px black;
+    width: 700px;
+    height: 100px;
+    display: flex;
+    margin: 200px;
+    justify-content: center; 
+}
+
+.servicesContainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 150px 0px;
+}
+
+.serviiiice {
+    width: 350px;
+    height: 350px;
+    background-color: #a7722b;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.serviiiice span {
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.temoignagesContainer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;  
+    padding: 150px 50px;
+}
+
+.temoignageee{
+    width: 350px;
+    height: 350px;
+    background-color: #c26e90;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    text-align: center;
+    flex-wrap: wrap;  
+}
+
+
+.temoignageee span {
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 800;  
+}
+
+.avantagesClientsContainer{
+    background-color: #36210e;
+    color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.acc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    text-align: center;  
+}
+.div7{
+  width: 35%
+};
+
+.div8{
+    width: 35%
+  };
+
+  .div9{
+    width: 35%
+  };

@@ -10,9 +10,10 @@ fetch("patisseries.json")
     // Appelle la fonction addProducts() avec les données JSON en entrée
     afficheLeHero(data)
     addProducts(data.entreprise.produits);
+    afficheAvantagesClients(data.entreprise.avantagesClients);
     afficherService(data.entreprise.services);
     afficheAvis(data.entreprise.temoignages);
-    afficheAvantagesClients(data.entreprise.avantagesClients);
+
   });
 
 function afficheLeHero(donnee){
@@ -30,10 +31,9 @@ function afficheAvantagesClients(tableauAvantageClients){
   //paramétre: tableau des avantages clients
   tableauAvantageClients.forEach(element =>{
   document.querySelector("#AC").innerHTML+=`
-  <div classe="div5">
-  <h3>${element}</h3>
-  
-  </div>
+  <div class="acc" >
+  <div>${element}</div>
+
   
   `});
 }
@@ -59,12 +59,11 @@ function afficherService(tableauDesServices){
   tableauDesServices.forEach(srvc =>{
 
 document.querySelector("#pre").innerHTML +=`
-<div  >
 
-    <h3>${srvc.nom}</h3>
-    <p>${srvc.description}<p>
-
-</div>
+<p class="serviiiice">
+<span>${srvc.nom}</span>
+${srvc.description}
+</p>
 
 
 `});
@@ -73,12 +72,13 @@ function afficheAvis(tableauDesAvis){
   tableauDesAvis.forEach(avs=>{
 
   document.querySelector("#AVIS").innerHTML+=`
-  <div >
-      <h2>${avs.prenom}</h2>
-      <h3>${avs.typeExperience}</h3>
-      <h3>${avs.commentaire}</h3>
-      <h3>${avs.note}</h3>
-  </div>
+
+  <p class="temoignageee">
+  <span>${avs.prenom}</span>
+  <span>${avs.typeExperience}</span>
+  "${avs.commentaire}"
+  <span>${avs.note}</span>
+</p>
 
   `});
 }
